@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url("bg.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+   
+   z-index: -1;
+   top: 0;
+   left: 0;
+    width: 100%;
+    min-height: 100vh;
+    
+    
+}
+
+
+.container {
+
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+   animation: gradientMove 15s 2s linear infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+@keyframes gradientMove {
+    0%{
+        background-color: chartreuse;
+    }
+    13%{
+        background-color: chocolate;
+    }
+    26%{
+        background-color: aqua;
+    }
+    40%{
+        background-color: purple;
+    }
+   
+   55%{
+        background-color: peru;
+    }
+      70%{
+        background-color:crimson;
+    }
+     
+      85%{
+        background-color: gold;
+    }
+     
+     100%{
+        background-color: darkblue;
+    }
+      
+     
+    
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+/* ✅ ONLY task text pe line */
+.task-text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.actions span {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+  }
+}
