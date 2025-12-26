@@ -104,7 +104,7 @@ li {
   border-radius: 5px;
 }
 
-/* ✅ ONLY task text pe line */
+
 .task-text.completed {
   text-decoration: line-through;
   opacity: 0.6;
